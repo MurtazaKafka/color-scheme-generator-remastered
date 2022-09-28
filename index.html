@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color scheme Generator Remastered</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <body>
+        <main>
+            <section>
+                <form>
+                <input class="bar" type="color" id="col" value="#F55A5A">
+                <label for="theme"></label>
+                <select class="bar" name="theme" id="theme">
+                    <option class="mode" value="monochrome" selected>Monochrome</option>
+                    <option class="mode" value="monchrome-dark">Monochrome-dark</option>
+                    <option class="mode" value="monochrome-light">Monochrome-light</option>
+                    <option class="mode" value="analogic">Analogic</option>
+                    <option class="mode" value="complement">Complement</option>
+                    <option class="mode" value="analogic-complement">Analogic-complement</option>
+                    <option class="mode" value="triad">Triad</option>
+                </select>
+                <button class="bar" id="btn-gen">Get color scheme</button>
+            </form>
+            </section>
+            <section>
+                <div class="palette" id="palette">
+                    <div class="colors" class="js-textareacopybtn" id="red"></div>
+                    <div class="colors" class="js-textareacopybtn" id="black"></div>
+                    <div class="colors" class="js-textareacopybtn" id="beige"></div>
+                    <div class="colors" class="js-textareacopybtn" id="green"></div>
+                    <div class="colors" class="js-textareacopybtn" id="purple"></div>
+                </div>
+                <div class="hex-value">
+                    <p class="hex" class="js-textareacopybtn js-copytextarea" id="val-red">#F55A5A</p>
+                    <p class="hex" class="js-textareacopybtn js-copytextarea" id="val-black">#2B283A</p>
+                    <p class="hex" class="js-textareacopybtn js-copytextarea" id="val-beige">#FBF3AB</p>
+                    <p class="hex" class="js-textareacopybtn js-copytextarea" id="val-green">#AAD1B6</p>
+                    <p class="hex" class="js-textareacopybtn js-copytextarea" id="val-purple">#A626D3</p>
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+</body>
+</html>
